@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ### Quick Start
 
 1. Prepare CSV-formatted datasets (see `data/` folder for example structure).
-2. Configure experiment parameters in `./main_NPCC-ST.py`, including:
+2. Configure experiment parameters in `./main_toformer.py`, including:
 
    * Dataset path
    * Input/output sequence lengths
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 3. Start training:
 
 ```bash
-python -u main_NPCC-ST.py --model NPCC-ST --data ECL --attn prob --freq h 
+python -u main_toformer.py --model toformer --data ECL --attn prob --freq h 
 ```
 
 
