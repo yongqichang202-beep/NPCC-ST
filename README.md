@@ -1,6 +1,7 @@
-## Toformer：A Multivariate Long-term Time Series Forecasting Model Based on Nonnegative Projection
+## NPCC-ST: A Framework based on Non-negative Projected Sparse Attention and Gated Convolution for Time Series Forecasting
 
-**Toformer** is an enhanced long-term time series forecasting model based on [Informer2020](https://github.com/zhouhaoyi/Informer2020.git), released under the **Apache License 2.0**. By integrating the **Non-negative Projection Correlation Coefficient (NPCC) Attention** mechanism and a **Convolutional Gating module**, Toformer significantly improves prediction accuracy and stability for complex long-range time series.
+
+**NPCC-ST** is an enhanced long-term time series forecasting model based on [Informer2020](https://github.com/zhouhaoyi/Informer2020.git), released under the **Apache License 2.0**. By integrating the **Non-negative Projection Correlation Coefficient (NPCC) Attention** mechanism and a **Convolutional Gating module**, NPCC-ST significantly improves prediction accuracy and stability for complex long-range time series.
 
 ---
 
@@ -8,12 +9,12 @@
 
 Time series forecasting plays a critical role in energy management, traffic scheduling, and weather prediction. Traditional attention mechanisms often struggle with long sequences and noisy data, leading to decreased accuracy and high computational costs.
 
-Toformer addresses these challenges by:
+NPCC-ST addresses these challenges by:
 
 * Replacing the original KL-divergence based QK correlation with **NPCC Attention**, improving attention weight precision and robustness.
 * Incorporating a **Convolutional Gating module** to enhance local temporal feature extraction while complementing global attention.
 
-These enhancements enable Toformer to maintain high accuracy for long-term forecasting while effectively capturing dynamic patterns in complex data.
+These enhancements enable NPCC-ST to maintain high accuracy for long-term forecasting while effectively capturing dynamic patterns in complex data.
 
 ---
 
@@ -55,8 +56,8 @@ These enhancements enable Toformer to maintain high accuracy for long-term forec
 ### Installation Steps
 
 ```bash
-git clone https://github.com/yongqichang202-beep/Toformer.git
-cd Toformer
+git clone https://github.com/yongqichang202-beep/NPCC-ST.git
+cd NPCC-ST
 pip install -r requirements.txt
 ```
 
@@ -67,7 +68,7 @@ pip install -r requirements.txt
 ### Quick Start
 
 1. Prepare CSV-formatted datasets (see `data/` folder for example structure).
-2. Configure experiment parameters in `./main_Toformer.py`, including:
+2. Configure experiment parameters in `./main_NPCC-ST.py`, including:
 
    * Dataset path
    * Input/output sequence lengths
@@ -76,7 +77,7 @@ pip install -r requirements.txt
 3. Start training:
 
 ```bash
-python -u main_toformer.py --model toformer --data ECL --attn prob --freq h 
+python -u main_NPCC-ST.py --model NPCC-ST --data ECL --attn prob --freq h 
 ```
 
 ---
@@ -95,7 +96,7 @@ python -u main_toformer.py --model toformer --data ECL --attn prob --freq h
 
 ## Experimental Results
 
-In multiple long-horizon forecasting benchmarks, **Toformer** outperforms baseline models including Informer:
+In multiple long-horizon forecasting benchmarks, **NPCC-ST** outperforms baseline models including Informer:
 
 * Lower MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error)
 * Improved stability across different prediction horizons
@@ -127,5 +128,5 @@ This project is released under the **Apache License 2.0**. See [LICENSE](./LICEN
 For technical inquiries or collaboration:
 
 * Author: \[[yongqichang202@gmail.com](yongqichang202@gmail.com)]
-* Project: [[https://github.com/yongqichang202-beep/Toformer.git](https://github.com/yongqichang202-beep/Toformer.git)]
+* Project: [[https://github.com/yongqichang202-beep/NPCC-ST.git](https://github.com/yongqichang202-beep/NPCC-ST.git)]
 
