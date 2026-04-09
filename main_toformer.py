@@ -2,9 +2,9 @@ import argparse
 import os
 import torch
 
-from exp.exp_toformer import Exp_Toformer
+from exp.exp_toformer import Exp_NPCC-ST
 
-parser = argparse.ArgumentParser(description='[Toformer]')
+parser = argparse.ArgumentParser(description='[NPCC-ST]')
 
 parser.add_argument('--model', type=str, required=True, default='toformer',help='model of experiment')
 
@@ -94,7 +94,7 @@ args.freq = args.freq[-1:]
 print('Args in experiment:')
 print(args)
 
-Exp = Exp_Toformer
+Exp = Exp_NPCC-ST
 
 for ii in range(args.itr):
     # setting record of experiments
