@@ -80,19 +80,6 @@ pip install -r requirements.txt
 python -u main_NPCC-ST.py --model NPCC-ST --data ECL --attn prob --freq h 
 ```
 
----
-
-## Supported Datasets
-
-| Dataset  | Description                                        | Download Link                                                                            | License / Usage                                       |
-| -------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| ETTh1    | Electricity Transformer Temperature 1              | [Kaggle](https://www.kaggle.com/datasets/abiridir/etth1-dataset-csv)                     | Free for research, check for commercial use           |
-| ETTh2    | Electricity Transformer Temperature 2              | [Kaggle](https://www.kaggle.com/datasets/labbaxmx/time-series)                           | Free for research                                     |
-| ETTm1    | Electricity Transformer Temperature multivariate 1 | [Kaggle](https://www.kaggle.com/datasets/labbaxmx/time-series)                           | Free for research                                     |
-| ECL      | Electricity Consumption                            | [Nixtla](https://nixtlaverse.nixtla.io/datasetsforecast/long_horizon.html)               | Open-source, free for research                        |
-| Traffic  | Traffic Flow                                       | [Nixtla](https://nixtlaverse.nixtla.io/datasetsforecast/long_horizon.html)               | Open-source, free for research                        |
-| Weather  | Weather Forecast                                   | [Nixtla](https://nixtlaverse.nixtla.io/datasetsforecast/long_horizon.html)               | Open-source, free for research                        |
----
 
 ## Experimental Results
 
