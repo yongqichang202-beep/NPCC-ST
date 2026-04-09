@@ -81,19 +81,6 @@ python -u main_NPCC-ST.py --model NPCC-ST --data ECL --attn prob --freq h
 ```
 
 
-## Experimental Results
-
-In multiple long-horizon forecasting benchmarks, **NPCC-ST** outperforms baseline models including Informer:
-
-* Lower MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error)
-* Improved stability across different prediction horizons
-* Stronger generalization to noisy or irregular time series
-
-The following primarily presents relevant metrics under univariate and multivariate tasks. 
-<img src="./img/Univariate.png" alt="Univariate">
-<img src="./img/Multivariate.png" alt="Multivariate">
-
----
 
 ## License
 
